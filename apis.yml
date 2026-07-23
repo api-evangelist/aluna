@@ -1,8 +1,29 @@
 aid: aluna
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/aluna.png
 name: Aluna
-description: 'Aluna is a company surfaced as a portfolio company of matrix-partners and added to the API
-  Evangelist network as a stub for enrichment. Sector: healthtech. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Aluna is a digital respiratory health company behind an FDA-cleared, portable
+  Bluetooth spirometer and companion mobile app that let people with asthma,
+  COPD, and cystic fibrosis measure lung function (FEV1) at home and share the
+  results with their care teams. The platform pairs a hospital-grade sensor with
+  a gamified app and machine-learning analytics to encourage proper technique,
+  track symptoms, triggers, and medications, and surface trends that help
+  clinicians intervene before an exacerbation. Founded by Charvi Shetty and
+  Inderjit Jutla out of UC Berkeley's bioengineering program, Aluna raised a
+  $15.3M Series B and is a Matrix Partners portfolio company; the product is now
+  operated under Huma Therapeutics. Aluna publishes consumer, clinical-provider,
+  and clinical-trial surfaces but no public developer API.
 url: https://raw.githubusercontent.com/api-evangelist/aluna/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -16,6 +37,13 @@ modified: '2026-07-17'
 tags:
 - Company
 - Healthtech
+- Respiratory
+- Spirometry
+- Remote Patient Monitoring
+- Digital Health
+- Medical Device
+- Asthma
+- COPD
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +53,32 @@ maintainers:
 common:
 - type: Website
   url: https://alunacare.com
+- type: Support
+  url: https://aluna.zendesk.com/hc/en-us
+- type: GettingStarted
+  url: https://aluna.zendesk.com/hc/en-us/sections/360005477113-Get-Started
+- type: Blog
+  url: https://aluna.blog/
+- type: PrivacyPolicy
+  url: https://alunacare.com/pages/our-privacy-policy
+- type: TermsOfService
+  url: https://alunacare.com/pages/terms-and-conditions
+- type: Pricing
+  url: https://alunacare.com/pages/get-aluna
+- type: LinkedIn
+  url: https://www.linkedin.com/company/alunacare
+- type: Twitter
+  url: https://x.com/alunacare
+- type: AppStore
+  url: https://apps.apple.com/us/app/aluna-lung-health-management/id1418673244
+- type: GooglePlay
+  url: https://play.google.com/store/apps/details?id=com.aluna.app
+- type: WellKnown
+  url: well-known/aluna-well-known.yml
+- type: DomainSecurity
+  url: security/aluna-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

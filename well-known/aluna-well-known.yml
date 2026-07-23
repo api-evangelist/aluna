@@ -1,0 +1,24 @@
+generated: '2026-07-17'
+method: searched
+source: live probe of https://alunacare.com/.well-known/*
+host: https://alunacare.com
+note: >-
+  alunacare.com is served on Shopify; the openid-configuration and
+  oauth-authorization-server documents are Shopify's storefront
+  customer-account OAuth/OIDC discovery (issuer shopify.com), not a
+  first-party Aluna API authorization server. Captured verbatim as the
+  real documents served on the base host. No first-party developer API
+  surface is published by Aluna.
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: aluna-openid-configuration.json
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: aluna-oauth-authorization-server.json
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
